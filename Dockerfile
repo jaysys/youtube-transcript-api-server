@@ -10,6 +10,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
 COPY main.py .
+COPY get_transcript_and_save_to_text.py .
 
 # Expose port
 EXPOSE 8000
