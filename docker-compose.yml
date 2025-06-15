@@ -1,0 +1,9 @@
+services:
+  youtube-transcript-api:
+    build: .
+    ports:
+      - ${APP_PORT:-8888}:8000
+    environment:
+      - PYTHONPATH=/app
+    restart: unless-stopped
+    container_name: youtube-transcript-api
