@@ -34,13 +34,8 @@ APP_PORT=9000
 
 ```bash
 # 서비스 시작
-docker-compose up -d
+docker compose up -d --build
 
-# 로그 확인
-docker-compose logs -f
-
-# 서비스 중지
-docker-compose down
 ```
 
 ### 로컬 개발
